@@ -7,5 +7,5 @@ async def get_virtual_selected_parent_blue_score():
     """
     Returns the blue score of virtual selected parent
     """
-    resp = await kaspad_client.request("getVirtualSelectedParentBlueScoreRequest")
-    return resp["getVirtualSelectedParentBlueScoreResponse"]
+    resp = await kaspad_client.request("getSinkBlueScoreRequest")
+    return resp["getSinkBlueScoreResponse"]
